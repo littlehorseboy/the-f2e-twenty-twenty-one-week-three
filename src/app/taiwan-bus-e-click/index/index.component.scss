@@ -1,0 +1,30 @@
+.index {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  .title {
+    flex-grow: 1;
+    background-image: url(~src/assets/bg.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .buses {
+    padding: 0.5rem;
+
+    &.grid {
+      margin-right: 0;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    &::ng-deep .p-card .p-card-body .p-card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
