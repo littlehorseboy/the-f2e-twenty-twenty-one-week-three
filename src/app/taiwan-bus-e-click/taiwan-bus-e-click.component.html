@@ -1,3 +1,37 @@
-<p>taiwan-bus-e-click works!</p>
+<div class="wrapper">
+  <p-toolbar>
+    <div class="p-toolbar-group-left">
+      <img src="./assets/logo.svg">
 
-<router-outlet></router-outlet>
+      <!-- <i class="pi pi-bars"></i> -->
+    </div>
+
+    <div class="p-toolbar-group-left">
+      <button pButton type="button" label="附近車牌" class="p-button-text"></button>
+      <button pButton type="button" label="路線規劃" class="p-button-text"></button>
+      <button pButton type="button" label="站點查詢" class="p-button-text"></button>
+      <button pButton type="button" label="收藏站牌" class="p-button-text"></button>
+    </div>
+
+    <div class="p-toolbar-group-right">
+      <i class="pi pi-globe"></i>
+      <button pButton type="button" label="中文" class="p-button-text"></button>
+      ｜
+      <button pButton type="button" label="英文" class="p-button-text"></button>
+    </div>
+  </p-toolbar>
+
+  <main class="main">
+    <router-outlet></router-outlet>
+  </main>
+
+  <p-toolbar>
+    <div class="p-toolbar-group-left">
+    </div>
+    <div class="p-toolbar-group-left">
+      ©2021, Taiwan Bike. All Rights Reserved.
+    </div>
+    <div class="p-toolbar-group-right">
+    </div>
+  </p-toolbar>
+</div>
